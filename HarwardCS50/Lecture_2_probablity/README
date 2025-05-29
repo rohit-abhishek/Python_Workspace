@@ -1,0 +1,4 @@
+you will need python package for desiging a model using probablity distribution. There are many packages available to do this we will use pomegranate
+the package is modified since 2023 - these programs will need lots of changes 
+pip install pomegranate==0.14.9
+
