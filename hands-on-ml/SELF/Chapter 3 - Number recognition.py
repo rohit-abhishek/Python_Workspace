@@ -3,11 +3,18 @@ import pygame
 import sys
 import joblib
 import time
+import os 
 
 # Check command-line arguments
 # if len(sys.argv) != 2:
 #     sys.exit("Usage: python recognition.py model")
-model = joblib.load('/Users/rohitabhishek/Documents/Programming_Workspace/Github-Programs/hands-on-ml/SELF/OUTPUT/Chapter3/svc_clf_full.pkl')
+current_path = __file__
+model_path = os.path.join(os.path.dirname(current_path), "OUTPUT/Chapter3")
+data_path = os.path.join(os.path.dirname(current_path), "DATA/Chapter3")
+
+model_name = 'svc_clf_full.pkl'
+
+model = joblib.load(os.path.join(model_path, model_name))
 
 # Colors
 BLACK = (0, 0, 0)
@@ -19,7 +26,7 @@ size = width, height = 600, 400
 screen = pygame.display.set_mode(size)
 
 # Fonts
-OPEN_SANS = "/Users/rohitabhishek/Documents/Programming_Workspace/Github-Programs/HarwardCS50/Lecture_5_Neural_Network/Handwriting/assets/fonts/OpenSans-Regular.ttf"
+OPEN_SANS = os.path.join(data_path, "assets/fonts/OpenSans-Regular.ttf")
 smallFont = pygame.font.Font(OPEN_SANS, 20)
 largeFont = pygame.font.Font(OPEN_SANS, 40)
 
