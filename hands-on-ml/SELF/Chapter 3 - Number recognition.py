@@ -9,10 +9,11 @@ import os
 # if len(sys.argv) != 2:
 #     sys.exit("Usage: python recognition.py model")
 current_path = __file__
-model_path = os.path.join(os.path.dirname(current_path), "OUTPUT/Chapter3")
+model_path = os.path.join(os.path.dirname(current_path), "OUTPUT/Chapter7")
 data_path = os.path.join(os.path.dirname(current_path), "DATA/Chapter3")
 
-model_name = 'svc_clf_full.pkl'
+# model_name = 'svc_clf_full.pkl'
+model_name = 'soft_voting_clf.pkl'
 
 model = joblib.load(os.path.join(model_path, model_name))
 
