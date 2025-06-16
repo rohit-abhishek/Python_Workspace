@@ -14,6 +14,13 @@ __pycache__/
 *.tgz
 *.bz2
 
+
+# keras h5 and data files
+*.keras 
+*.h5 
+*.data
+*.dot
+
 # no need to send any files created during performance tuning 
 /advanced-python/Chapter_2/data/joblib/*
 /advanced-python/Chapter_1/Particle_Simulation/tests/data/*
