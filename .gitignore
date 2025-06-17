@@ -27,6 +27,8 @@ __pycache__/
 /hands-on-ml/SELF/DATA/Chapter3/spam/ham/*
 /hands-on-ml/SELF/DATA/Chapter3/spam/spam/*
 
+tensorboard_logs/
+Tensorboard_Logs/
 
 # Distribution / packaging
 .Python

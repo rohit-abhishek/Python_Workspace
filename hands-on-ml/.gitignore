@@ -16,6 +16,8 @@ Keras_Tuner_Output/
 
 # Tensorboard logs
 Tensorboard_Logs/
+tensorboard_logs/
+
 
 # Distribution / packaging
 .Python
