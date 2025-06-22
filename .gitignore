@@ -20,6 +20,12 @@ __pycache__/
 *.h5 
 *.data
 *.dot
+*.jpeg
+*.jpg
+*.model
+*.json
+*.gz
+
 
 # no need to send any files created during performance tuning 
 /advanced-python/Chapter_2/data/joblib/*
