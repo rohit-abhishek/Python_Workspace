@@ -25,6 +25,7 @@ __pycache__/
 *.model
 *.json
 *.gz
+*.tflite
 
 
 # no need to send any files created during performance tuning 
